@@ -1,6 +1,6 @@
-package com.goodgame.profiling.bifroest_ymir.cassandra.statistics;
+package io.bifroest.ymir.cassandra.statistics;
 
-import com.goodgame.profiling.graphite_retentions.RetentionTable;
+import io.bifroest.retentions.RetentionTable;
 
 public class CreateTableEvent {
 

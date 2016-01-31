@@ -1,4 +1,4 @@
-package com.goodgame.profiling.bifroest_ymir.cassandra;
+package io.bifroest.ymir.cassandra;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,9 +12,9 @@ import com.datastax.driver.core.Session;
 import com.datastax.driver.core.SocketOptions;
 import com.datastax.driver.core.TableMetadata;
 
-import com.goodgame.profiling.commons.statistics.eventbus.EventBusManager;
-import com.goodgame.profiling.bifroest_ymir.cassandra.statistics.CreateTableEvent;
-import com.goodgame.profiling.graphite_retentions.RetentionTable;
+import io.bifroest.commons.statistics.eventbus.EventBusManager;
+import io.bifroest.ymir.cassandra.statistics.CreateTableEvent;
+import io.bifroest.retentions.RetentionTable;
 
 public class CassandraAccessLayer {
 

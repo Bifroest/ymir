@@ -1,4 +1,4 @@
-package com.goodgame.profiling.bifroest_ymir.ymir;
+package io.bifroest.ymir.ymir;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -9,18 +9,16 @@ import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 import org.kohsuke.MetaInfServices;
 
-import com.goodgame.profiling.commons.boot.interfaces.Subsystem;
-import com.goodgame.profiling.commons.statistics.units.SI_PREFIX;
-import com.goodgame.profiling.commons.statistics.units.TIME_UNIT;
-import com.goodgame.profiling.commons.statistics.units.parse.DurationParser;
-import com.goodgame.profiling.commons.systems.SystemIdentifiers;
-import com.goodgame.profiling.commons.systems.configuration.EnvironmentWithJSONConfiguration;
-import com.goodgame.profiling.commons.systems.cron.TaskRunner;
-import com.goodgame.profiling.commons.systems.cron.TaskRunner.TaskID;
+import io.bifroest.commons.SystemIdentifiers;
+import io.bifroest.commons.boot.interfaces.Subsystem;
+import io.bifroest.commons.configuration.EnvironmentWithJSONConfiguration;
+import io.bifroest.commons.cron.TaskRunner;
+import io.bifroest.commons.cron.TaskRunner.TaskID;
+import io.bifroest.commons.statistics.units.parse.DurationParser;
 
-import com.goodgame.profiling.bifroest_ymir.YmirIdentifiers;
-import com.goodgame.profiling.bifroest_ymir.cassandra.EnvironmentWithCassandra;
-import com.goodgame.profiling.graphite_retentions.bootloader.EnvironmentWithRetentionStrategy;
+import io.bifroest.ymir.YmirIdentifiers;
+import io.bifroest.ymir.cassandra.EnvironmentWithCassandra;
+import io.bifroest.retentions.bootloader.EnvironmentWithRetentionStrategy;
 
 @MetaInfServices
 public class YmirSystem<E extends EnvironmentWithJSONConfiguration

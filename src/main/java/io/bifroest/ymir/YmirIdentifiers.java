@@ -1,4 +1,4 @@
-package com.goodgame.profiling.bifroest_ymir;
+package io.bifroest.ymir;
 
 public class YmirIdentifiers {
 

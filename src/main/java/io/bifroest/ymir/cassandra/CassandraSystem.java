@@ -1,4 +1,4 @@
-package com.goodgame.profiling.bifroest_ymir.cassandra;
+package io.bifroest.ymir.cassandra;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -10,14 +10,13 @@ import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 import org.kohsuke.MetaInfServices;
 
-import com.goodgame.profiling.commons.boot.interfaces.Subsystem;
-import com.goodgame.profiling.commons.statistics.units.parse.DurationParser;
-import com.goodgame.profiling.commons.systems.SystemIdentifiers;
-import com.goodgame.profiling.commons.systems.configuration.EnvironmentWithJSONConfiguration;
-import com.goodgame.profiling.commons.util.json.JSONUtils;
+import io.bifroest.commons.SystemIdentifiers;
+import io.bifroest.commons.boot.interfaces.Subsystem;
+import io.bifroest.commons.configuration.EnvironmentWithJSONConfiguration;
+import io.bifroest.commons.statistics.units.parse.DurationParser;
+import io.bifroest.commons.util.json.JSONUtils;
 
-import com.goodgame.profiling.bifroest_ymir.YmirIdentifiers;
-import com.goodgame.profiling.graphite_retentions.bootloader.EnvironmentWithRetentionStrategy;
+import io.bifroest.ymir.YmirIdentifiers;
 
 @MetaInfServices
 public class CassandraSystem<E extends EnvironmentWithJSONConfiguration

@@ -1,13 +1,13 @@
-package com.goodgame.profiling.bifroest_ymir;
+package io.bifroest.ymir;
 
 import java.nio.file.Path;
 
-import com.goodgame.profiling.commons.boot.InitD;
-import com.goodgame.profiling.commons.systems.common.AbstractCommonEnvironment;
-import com.goodgame.profiling.bifroest_ymir.cassandra.CassandraAccessLayer;
-import com.goodgame.profiling.bifroest_ymir.cassandra.EnvironmentWithMutableCassandra;
-import com.goodgame.profiling.graphite_retentions.RetentionConfiguration;
-import com.goodgame.profiling.graphite_retentions.bootloader.EnvironmentWithMutableRetentionStrategy;
+import io.bifroest.commons.boot.InitD;
+import io.bifroest.commons.environment.AbstractCommonEnvironment;
+import io.bifroest.ymir.cassandra.CassandraAccessLayer;
+import io.bifroest.ymir.cassandra.EnvironmentWithMutableCassandra;
+import io.bifroest.retentions.RetentionConfiguration;
+import io.bifroest.retentions.bootloader.EnvironmentWithMutableRetentionStrategy;
 
 public class YmirEnvironment extends AbstractCommonEnvironment
     implements EnvironmentWithMutableCassandra,

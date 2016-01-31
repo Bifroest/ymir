@@ -1,4 +1,4 @@
-package com.goodgame.profiling.bifroest_ymir.cassandra;
+package io.bifroest.ymir.cassandra;
 
 public interface EnvironmentWithMutableCassandra extends EnvironmentWithCassandra {
 

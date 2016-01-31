@@ -1,6 +1,6 @@
-package com.goodgame.profiling.bifroest_ymir.ymir.statistics;
+package io.bifroest.ymir.ymir.statistics;
 
-import com.goodgame.profiling.commons.statistics.process.ProcessStartedEvent;
+import io.bifroest.commons.statistics.process.ProcessStartedEvent;
 
 public class YmirStartedEvent extends ProcessStartedEvent {
 

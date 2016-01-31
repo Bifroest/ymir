@@ -1,24 +1,21 @@
-package com.goodgame.profiling.bifroest_ymir.ymir;
+package io.bifroest.ymir.ymir;
 
-import java.util.concurrent.TimeUnit;
 import java.time.Duration;
-import java.util.Date;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.goodgame.profiling.commons.systems.configuration.EnvironmentWithJSONConfiguration;
-import com.goodgame.profiling.commons.statistics.eventbus.EventBusManager;
+import io.bifroest.commons.configuration.EnvironmentWithJSONConfiguration;
+import io.bifroest.commons.statistics.eventbus.EventBusManager;
 
-import com.goodgame.profiling.bifroest_ymir.ymir.statistics.YmirStartedEvent;
-import com.goodgame.profiling.bifroest_ymir.ymir.statistics.YmirFinishedEvent;
-import com.goodgame.profiling.bifroest_ymir.cassandra.EnvironmentWithCassandra;
-import com.goodgame.profiling.graphite_retentions.bootloader.EnvironmentWithRetentionStrategy;
-import com.goodgame.profiling.graphite_retentions.RetentionTable;
-import com.goodgame.profiling.graphite_retentions.RetentionLevel;
+import io.bifroest.ymir.ymir.statistics.YmirStartedEvent;
+import io.bifroest.ymir.ymir.statistics.YmirFinishedEvent;
+import io.bifroest.ymir.cassandra.EnvironmentWithCassandra;
+import io.bifroest.retentions.bootloader.EnvironmentWithRetentionStrategy;
+import io.bifroest.retentions.RetentionTable;
+import io.bifroest.retentions.RetentionLevel;
 
 public class Ymir<E extends EnvironmentWithCassandra
                           & EnvironmentWithRetentionStrategy

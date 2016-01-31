@@ -1,6 +1,6 @@
-package com.goodgame.profiling.bifroest_ymir.ymir.statistics;
+package io.bifroest.ymir.ymir.statistics;
 
-import com.goodgame.profiling.commons.statistics.process.ProcessFinishedEvent;
+import io.bifroest.commons.statistics.process.ProcessFinishedEvent;
 
 public class YmirFinishedEvent extends ProcessFinishedEvent {
 
